@@ -1,0 +1,16 @@
+PODS:
+  - LYXimalayaSDK (0.1.0)
+
+DEPENDENCIES:
+  - LYXimalayaSDK (from `../`)
+
+EXTERNAL SOURCES:
+  LYXimalayaSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYXimalayaSDK: 5371ece6eb2a0cdd63c20c0f7251026f124d1fda
+
+PODFILE CHECKSUM: ae3b95d6ad66a52c09832dc69659e6439230058e
+
+COCOAPODS: 1.6.0.beta.2

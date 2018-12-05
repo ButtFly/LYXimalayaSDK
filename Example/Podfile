@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LYXimalayaSDK_Example' do
+  pod 'LYXimalayaSDK', :path => '../'
+
+  target 'LYXimalayaSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

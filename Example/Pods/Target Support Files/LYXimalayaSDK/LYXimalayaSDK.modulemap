@@ -1,0 +1,6 @@
+framework module LYXimalayaSDK {
+  umbrella header "LYXimalayaSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

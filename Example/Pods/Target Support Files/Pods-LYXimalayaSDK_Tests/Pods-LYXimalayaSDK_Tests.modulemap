@@ -1,0 +1,6 @@
+framework module Pods_LYXimalayaSDK_Tests {
+  umbrella header "Pods-LYXimalayaSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
