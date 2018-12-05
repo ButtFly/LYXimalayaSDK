@@ -1,0 +1,1 @@
+../../../../../LYXimalayaSDK/Classes/Model/XMColumnDetail.h

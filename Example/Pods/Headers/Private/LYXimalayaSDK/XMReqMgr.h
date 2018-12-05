@@ -1,0 +1,1 @@
+../../../../../LYXimalayaSDK/Classes/Request/XMReqMgr.h

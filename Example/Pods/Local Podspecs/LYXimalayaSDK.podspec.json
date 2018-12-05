@@ -1,8 +1,8 @@
 {
   "name": "LYXimalayaSDK",
-  "version": "0.1.0",
-  "summary": "A short description of LYXimalayaSDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "自用喜马拉雅 sdk，喜马拉雅开放平台 http://open.ximalaya.com",
+  "description": "自用喜马拉雅 sdk，喜马拉雅开放平台 http://open.ximalaya.com，便于自己开发使用",
   "homepage": "https://github.com/ButtFly/LYXimalayaSDK",
   "license": {
     "type": "MIT",
@@ -13,10 +13,27 @@
   },
   "source": {
     "git": "https://github.com/ButtFly/LYXimalayaSDK.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LYXimalayaSDK/Classes/**/*"
+  "source_files": "LYXimalayaSDK/Classes/**/*",
+  "resources": "LYXimalayaSDK/Resource/XMResource.bundle",
+  "ios": {
+    "vendored_libraries": "LYXimalayaSDK/Libraries/libXMOpenPlatform.a"
+  },
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreTelephony"
+  ],
+  "libraries": "z",
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ],
+    "FMDB": [
+
+    ]
+  }
 }
