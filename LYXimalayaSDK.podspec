@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYXimalayaSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '自用喜马拉雅 sdk，喜马拉雅开放平台 http://open.ximalaya.com'
 
 # This description is used to generate tags and improve search results.
@@ -40,9 +40,10 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
+  s.compiler_flags = '-ObjC'
   s.resource = 'LYXimalayaSDK/Resource/XMResource.bundle'
   s.ios.vendored_library = 'LYXimalayaSDK/Libraries/libXMOpenPlatform.a'
-  s.frameworks = 'SystemConfiguration', 'CoreTelephony'
+  s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'Foundation', 'UIKit'
   s.libraries = 'z'
   s.dependency 'MBProgressHUD'
   s.dependency 'FMDB'

@@ -1,1 +1,0 @@
-../../../../../LYXimalayaSDK/Classes/Model/XMAlbum.h

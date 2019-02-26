@@ -54,7 +54,7 @@
 - (void)XMTrackDownloadStatusUpdated:(XMTrack *)track;
 
 /**
- *   从数据库载入数据时被调用
+ *   从数据库载入数据完成时被调用
  */
 - (void)XMTrackDownloadDidLoadFromDB;
 
@@ -223,6 +223,7 @@ DECLARE_SINGLETON_METHOD(XMSDKDownloadManager, sharedSDKDownloadManager)
 - (void)clearAllDownloads;
 
 #pragma mark 获取下载状态／音频／专辑信息接口
+/* 获取状态的接口请在XMTrackDownloadDidLoadFromDB回调触发后再调用，否则可能会出现获取不到状态的情况 */
 
 /**
  *  获取单个音频下载状态
@@ -250,6 +251,12 @@ DECLARE_SINGLETON_METHOD(XMSDKDownloadManager, sharedSDKDownloadManager)
  *  @return 字典 key:trackId NSNumber, value:XMTrackDownloadStatus
  */
 - (NSMutableDictionary *)getAllDownloadStatus;
+
+/**
+ *  获取全部下载中的音频
+ *  @return XMCacheTrack array
+ */
+- (NSArray *)getDownloadingSounds;
 
 /**
  *  获取已下载音频

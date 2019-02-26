@@ -106,6 +106,11 @@ typedef void (^XMRequestHandler)(id result,XMErrorModel *error);
 #pragma mark - 付费相关
 
 /**
+ * 将授权成功获得的token同步到XMReqMgr
+ */
+- (void)updateAuthTokenToXMReqMgr:(NSString *)authToken;
+
+/**
  *  请求付费相关接口
  *
  *  @param reqType 必填，请求类型
