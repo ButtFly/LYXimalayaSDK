@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.resource = 'LYXimalayaSDK/Resource/XMResource.bundle'
   s.ios.vendored_library = 'LYXimalayaSDK/Libraries/libXMOpenPlatform.a'
   s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'Foundation', 'UIKit'
-  s.libraries = 'z'
+  s.libraries = 'z', 'sqlite3'
   s.dependency 'MBProgressHUD'
   s.dependency 'FMDB'
 end
