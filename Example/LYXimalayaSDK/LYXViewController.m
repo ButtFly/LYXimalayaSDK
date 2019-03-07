@@ -7,7 +7,7 @@
 //
 
 #import "LYXViewController.h"
-#import <LYXimalayaSDK/XMReqMgr.h>
+#import <LYXimalayaSDK/LYXimalayaSDK.h>
 
 @interface LYXViewController ()
 

@@ -12,6 +12,12 @@
 
 #import "XMLYAuthorize.h"
 #import "XMSDKDownloadManager.h"
+#import "FMDatabase.h"
+#import "FMDatabaseAdditions.h"
+#import "FMDatabasePool.h"
+#import "FMDatabaseQueue.h"
+#import "FMResultSet.h"
+#import "MBProgressHUD.h"
 #import "XMAlbum.h"
 #import "XMAlbumColumn.h"
 #import "XMAlbumColumnItem.h"

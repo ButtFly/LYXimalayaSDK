@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E0038F6F60355514E3BCEEEAFC7020D4"
+               BlueprintIdentifier = "52BEB7FFAD354102BAEE8699889F8277"
+               BuildableName = "LYXimalayaSDK"
                BlueprintName = "LYXimalayaSDK"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "LYXimalayaSDK.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYXimalayaSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '自用喜马拉雅 sdk，喜马拉雅开放平台 http://open.ximalaya.com'
 
 # This description is used to generate tags and improve search results.
@@ -30,21 +30,22 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYXimalayaSDK/Classes/**/*'
+  s.source_files = 'LYXimalayaSDK/PublicHeader/**/*'
   
   # s.resource_bundles = {
   #   'LYXimalayaSDK' => ['LYXimalayaSDK/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'LYXimalayaSDK/LYXimalayaSDK/PublicHeader/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.compiler_flags = '-ObjC'
-  s.resource = 'LYXimalayaSDK/Resource/XMResource.bundle'
-  s.ios.vendored_library = 'LYXimalayaSDK/Libraries/libXMOpenPlatform.a'
+  # s.resource = 'LYXimalayaSDK/Resource/XMResource.bundle'
+  # s.vendored_libraries = 'LYXimalayaSDK/Libraries/libXMOpenPlatform.a'
+  s.vendored_frameworks = 'LYXimalayaSDK/Frameworks/XMOpenPlatform.framework'
   s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'Foundation', 'UIKit'
-  s.libraries = 'z', 'sqlite3'
+  s.libraries = 'z.1', 'sqlite3'
   s.dependency 'MBProgressHUD'
   s.dependency 'FMDB'
 end

@@ -7,7 +7,7 @@
 //
 
 #import "LYXAppDelegate.h"
-#import <LYXimalayaSDK/XMLYAuthorize.h>
+#import <LYXimalayaSDK/LYXimalayaSDK.h>
 
 @interface LYXAppDelegate () <XMLYAuthorizeDelegate>
 
